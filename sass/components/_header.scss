@@ -78,7 +78,7 @@
       }
     }
   
-  
+    
   
    // mob-menu
   
@@ -95,9 +95,7 @@
         display: none;
     }
 
-    .btn__buy__desk{
-        display: none;
-    }
+    
 
    
     .backdrop__menu{
@@ -247,7 +245,46 @@
   .active{
     color: #D41443;
   }
+// min-width:768px
+@media screen  and (max-width:767.8px){
+  .btn__buy__desk{
+    display: none;
+}
+}
 
+@media screen  and (min-width:768px){
+.btn__buy__desk{
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  
+    width: 200px;
+  
+
+  font-family: $text-main;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: $bg-btn-dark;
+  background-color: #fff;
+
+  &--size{
+    margin-left: 30px;
+    @media screen and (min-width:1280px){
+      margin-left: auto;
+    }
+    
+    padding: 15px 0;
+  }
+  &:hover,
+  &:focus{
+    background-color: #ECEBEB;;
+  }
+ }
+
+}
 
 
 //   min-width-1280px
@@ -265,11 +302,9 @@
      margin-right: 110px;
  }
 
- .btn__buy__desk{
-     &--size{
-         margin-left: auto;
-     }
- }
+ 
+
+ 
  .desk__nav{
 
     &--list{
@@ -303,32 +338,11 @@
     }
  }
 
- .btn__buy__desk{
-  display: flex;
-  justify-content: center;
-  border-radius: 25px;
-  
-    width: 200px;
-  
-
-  font-family: $text-main;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.4;
-
-  color: $bg-btn-dark;
-  background-color: #fff;
-
-  &--size{
-    
-    padding: 15px 0;
-  }
-  &:hover,
-  &:focus{
-    background-color: #ECEBEB;;
-  }
- }
+ 
 
     
 }
+
+
+
+

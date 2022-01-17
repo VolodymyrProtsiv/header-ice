@@ -462,9 +462,6 @@ body {
   .desk__nav {
     display: none;
   }
-  .btn__buy__desk {
-    display: none;
-  }
   .backdrop__menu {
     position: fixed;
     top: 0;
@@ -599,6 +596,48 @@ body {
   color: #D41443;
 }
 
+@media screen and (max-width: 767.8px) {
+  .btn__buy__desk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn__buy__desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 25px;
+    width: 200px;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #d41443;
+    background-color: #fff;
+  }
+  .btn__buy__desk--size {
+    margin-left: 30px;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1280px) {
+  .btn__buy__desk--size {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn__buy__desk:hover, .btn__buy__desk:focus {
+    background-color: #ECEBEB;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .burger {
     display: none;
@@ -608,9 +647,6 @@ body {
   }
   .logo {
     margin-right: 110px;
-  }
-  .btn__buy__desk--size {
-    margin-left: auto;
   }
   .desk__nav--list {
     display: -webkit-box;
@@ -637,29 +673,6 @@ body {
   }
   .desk__nav--link:hover, .desk__nav--link:focus {
     color: #D41443;
-  }
-  .btn__buy__desk {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-radius: 25px;
-    width: 200px;
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.4;
-    color: #d41443;
-    background-color: #fff;
-  }
-  .btn__buy__desk--size {
-    padding: 15px 0;
-  }
-  .btn__buy__desk:hover, .btn__buy__desk:focus {
-    background-color: #ECEBEB;
   }
 }
 /*# sourceMappingURL=main.css.map */
