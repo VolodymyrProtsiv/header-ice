@@ -470,7 +470,6 @@ header {
 @media screen and (max-width: 1279.8px) and (min-width: 1120px) {
   .mob_menu {
     width: 350px;
-    pointer-events: none;
   }
 }
 
@@ -503,6 +502,15 @@ header {
     color: #d41443;
     background-color: #fff;
   }
+}
+
+@media screen and (max-width: 1279.8px) and (min-width: 1120px) {
+  .btn__buy {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1279.8px) {
   .btn__buy--size {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -532,11 +540,17 @@ header {
         -ms-flex-align: center;
             align-items: center;
     color: #fff;
+    -webkit-transition: color 250ms background-color 250ms;
+    transition: color 250ms background-color 250ms;
   }
   .mob__nav--link:hover, .mob__nav--link:focus {
     color: #D41443;
     background-color: #E18298;
     text-align: center;
+  }
+  .mob__nav--link:focus {
+    outline: none;
+    border: 1px solid #E18298;
   }
 }
 

@@ -106,7 +106,7 @@
       width: 250px;
       @media screen and (min-width:1120px){
           width: 350px;
-          pointer-events: none;
+          // pointer-events: none;
           
       }
       height: 100vh;
@@ -130,6 +130,9 @@
       display: flex;
       justify-content: center;
       border-radius: 25px;
+      @media screen and (min-width:1120px){
+        width: 200px;
+      }
   
       font-family: $text-main;
       font-style: normal;
@@ -159,9 +162,11 @@
         border-top: 1px solid #E18298; 
         &:nth-child(2n){
           border-bottom: none;
-        border-top: none;
+          border-top: none;
   
         }
+
+       
       }
   
       &--link{
@@ -177,12 +182,22 @@
         align-items: center;
   
         color: #fff;
+
+        transition: color 250ms background-color 250ms;
+        ;
   
         &:hover,
         &:focus{
           color: #D41443;
           background-color:#E18298;
           text-align: center;
+          
+        }
+        &:focus{
+          outline: none;
+         border: 1px solid #E18298;
+         
+          
         }
       }
   
