@@ -645,6 +645,9 @@ body {
   .backdrop-menu {
     display: none;
   }
+  .mob__menu {
+    display: none;
+  }
   .logo {
     margin-right: 110px;
   }

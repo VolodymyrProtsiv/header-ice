@@ -247,9 +247,9 @@
   }
 // min-width:768px
 @media screen  and (max-width:767.8px){
-  .btn__buy__desk{
-    display: none;
-}
+    .btn__buy__desk{
+      display: none;
+  }
 }
 
 @media screen  and (min-width:768px){
@@ -293,6 +293,9 @@
         display: none;
     }
     .backdrop-menu{
+        display: none;
+      }
+      .mob__menu{
         display: none;
       }
 
