@@ -59,10 +59,23 @@
       width: 40px;
       height: 40px;
       margin-left: auto;
+      border:transparent;
+      background-color: transparent;
+
+      transition: color $pr-transition;
+
+
     
-        .backdrop-menu .data-modal-open &{
-            display: none;
-        }
+       
+    }
+    .icon-Burger{
+      fill: $color-design-main;
+      transition: color $pr-transition;
+
+      .burger:focus &,
+      .burger:hover &{
+        fill: #E17992;
+      }
     }
   
   

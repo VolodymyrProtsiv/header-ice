@@ -433,10 +433,21 @@ body {
   width: 40px;
   height: 40px;
   margin-left: auto;
+  border: transparent;
+  background-color: transparent;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-menu .data-modal-open .burger {
-  display: none;
+.icon-Burger {
+  fill: #d41443;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger:focus .icon-Burger,
+.burger:hover .icon-Burger {
+  fill: #E17992;
 }
 
 .container--mob__menu {
