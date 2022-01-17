@@ -244,6 +244,7 @@
     }
 
     &--link{
+
         font-family:$text-main;
         font-weight: 700;
         font-size: 14px;
@@ -251,7 +252,42 @@
         align-items: center;
   
         color: #fff;
+
+        transition: color $pr-transition;
+        
+  
+        &:hover,
+        &:focus{
+          color: #D41443;
+        }
     }
+ }
+
+ .btn__buy__desk{
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  
+    width: 200px;
+  
+
+  font-family: $text-main;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: $bg-btn-dark;
+  background-color: #fff;
+
+  &--size{
+    
+    padding: 15px 0;
+  }
+  &:hover,
+  &:focus{
+    background-color: #ECEBEB;;
+  }
  }
 
     
