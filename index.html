@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css"/>
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <div class="mob__wraper">
+              
+                <a class="logo  link " href="./index.html">
+                    <svg class="logo--icon" width="50" height="50">
+                        <use href="./img/symbol-defs.svg#icon-logo-ice-f"></use>
+                    </svg>
+
+                    <span class="logo--text">ICECREAM</span>
+                </a>
+                 
+                  <button class="burger" type="button" data-modal-open>
+                      
+                  </button>
+
+                  <!-- desktop-menu -->
+                  <nav class="desk__nav">
+                    <ul class="desk__nav--list list">
+                        <li class="desk__nav--item">
+                            <a class="desk__nav--link link active" href="#header">
+                                Home
+                            </a>
+                        </li>
+                        <li class="desk__nav--item">
+                            <a class="desk__nav--link link" href="#about">
+                                About us
+                            </a>
+                        </li>
+                        <li class="desk__nav--item">
+                            <a class="desk__nav--link link" href="#advantages">
+                                How it’s made?
+                            </a>
+                        </li>
+                        <li class="desk__nav--item">
+                            <a class="desk__nav--link link" href="#products">
+                                Our products
+                            </a>
+                        </li>
+                        <li class="desk__nav--item">
+                            <a class="desk__nav--link link" href="#contacts">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+ 
+                </nav>
+
+                <a class="btn__buy__desk btn__buy__desk--size link" href="">
+                    Buy now
+                 </a>
+
+
+              </div>
+             
+                <div class="container container--mob__menu">
+                
+                    <!-- mob-menu -->
+                   <div class="backdrop-menu visually__hidden" data-modal>
+                       <div class="mob_menu" >
+                           <button class="btn_mob_menu--close" type="button" data-modal-close>
+            
+                           </button>
+                           <a class="btn__buy btn__buy--size link" href="">
+                               Buy now
+                            </a>
+                           <!-- mob-menu-nav -->
+                           <nav class="mob__nav">
+                               <ul class="mob__nav--list list">
+                                   <li class="mob__nav--item">
+                                       <a class="mob__nav--link link active" href="#header">
+                                           Home
+                                       </a>
+                                   </li>
+                                   <li class="mob__nav--item">
+                                       <a class="mob__nav--link link" href="#about">
+                                           About us
+                                       </a>
+                                   </li>
+                                   <li class="mob__nav--item">
+                                       <a class="mob__nav--link link" href="#advantages">
+                                           How it’s made?
+                                       </a>
+                                   </li>
+                                   <li class="mob__nav--item">
+                                       <a class="mob__nav--link link" href="#products">
+                                           Our products
+                                       </a>
+                                   </li>
+                                   <li class="mob__nav--item">
+                                       <a class="mob__nav--link link" href="#contacts">
+                                           Contact
+                                       </a>
+                                   </li>
+                               </ul>
+            
+                           </nav>
+                       </div>
+                   </div>
+               </div>
+    
+            </div>
+
+
+
+              <!-- mob-menu -->
+              <!-- <div class=" header_container container ">
+                <a lang="en" href="" class="header_logo link">
+                    <img src="./images/header/Logo.png" alt="logo">
+                </a>
+                <nav class="header_navigation navigation">
+                    <ul class="navigation_list list">
+                        <li class="navigation_item"> <a href="#header" class="navigation_link link current">Home</a></li>
+                        <li class="navigation_item"> <a href="#about" class="navigation_link link">About us</a></li>
+                        <li class="navigation_item"> <a href="#advantages" class="navigation_link link">How it’s made?</a></li>
+                        <li class="navigation_item"> <a href="#products" class="navigation_link link">Our products</a></li>
+                        <li class="navigation_item"> <a href="#contacts" class="navigation_link link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="js-open-menu " aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="js-open-menu_icon" width="20" height="12">
+                        <use href="./images/icon.svg#icon-Burger"></use>
+                    </svg>
+                </button>
+                <button type="button" class="buy-btn button ">
+                    Buy now
+                    <svg class="buy-btn_icon" width="6" height="10">
+                        <use href="./images/icon.svg#icon-btn-arrow"></use>
+                    </svg>
+                </button>
+        
+            </div> -->
+        
+            
+            
+        </header>
+       
+
+      
+   
+      
+   
+
+     
+    
+    
+        <script src="./js/modal.js"></script>   
+    </body>
+</html>
