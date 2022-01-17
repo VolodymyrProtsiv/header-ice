@@ -100,7 +100,7 @@
     }
 
    
-    .backdrop-menu{
+    .backdrop__menu{
       position: fixed;
       top: 0;
       right: 0;
@@ -112,7 +112,7 @@
   
     }
   
-    .mob_menu{
+    .mob__menu{
       position: fixed;
       top: 0;
       right: 0;
@@ -128,15 +128,42 @@
       z-index: 999;
     }
   
-    .btn_mob_menu--close{
-      display: flex;
-      position: fixed;
+    .btn__mob__menu{
+      
+        position: fixed;
         top: 15px;
         right: 30px;
+
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+
         width: 40px;
         height: 40px;
+
         border-radius: 50%;
-        background-color: green;
+        background-color: transparent;
+        border: transparent;
+        
+
+        transition:  background-color $pr-transition;
+
+        .btn__mob__menu:focus,
+        .btn__mob__menu:hover{
+          background-color: #fff;
+      }
+    }
+
+    .icon__close{
+      fill: $color-design-main;
+      transition: color $pr-transition;
+
+      .btn__mob__menu:focus &,
+      .btn__mob__menu:hover &{
+        fill: #fff;
+      }
+      
+      
     }
   
     .btn__buy{
