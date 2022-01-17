@@ -8,6 +8,10 @@
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
+
+  // const scrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
+	// 	bodyScrollLock[scrollLockMethod](document.body);
+
   function toggleModal() {
     refs.modal.classList.toggle('visually__hidden');
   }
