@@ -35,7 +35,7 @@
         line-height: 27px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        
+        transition: background-color $pr-transition;
         color: $color-design-main;
             .logo:focus &,
             .logo:hover &{
@@ -43,8 +43,8 @@
             }
 
        }
-       &:focus,
-       &:hover{
+       &:focus ,
+       &:hover {
            color: $color-design-main;
            
        }
