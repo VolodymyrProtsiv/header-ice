@@ -1,7 +1,20 @@
  body {
      background-color: $bg-header-hero;
    }
+
+
+   .header__position{
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    align-items: center;
+    display: flex;
+   }
  
+
+   .container--mob__menu.data-modal-open  .header__position{
+     visibility: hidden;
+   }
   
   .logo{
       display: inline-flex;
@@ -56,6 +69,7 @@
   }
 
   .burger{
+
       width: 40px;
       height: 40px;
       margin-left: auto;

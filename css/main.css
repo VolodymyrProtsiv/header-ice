@@ -374,6 +374,22 @@ body {
   background-color: #ffb8ca;
 }
 
+.header__position {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container--mob__menu .data-modal-open .header__position {
+  visibility: hidden;
+}
+
 .logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -411,6 +427,8 @@ body {
   line-height: 27px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #d41443;
 }
 
