@@ -10,7 +10,7 @@
 
 
   // const scrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
-	// 	bodyScrollLock[scrollLockMethod](document.body);
+  // 	bodyScrollLock[scrollLockMethod](document.body);
 
   function toggleModal() {
     refs.modal.classList.toggle('visually__hidden');

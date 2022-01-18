@@ -4,17 +4,24 @@
 
 
    .header__position{
-    position: absolute;
-    top: 40px;
-    right: 35px;
+     @media screen and (min-width:767.8px){
+      position: absolute;
+      top: 40px;
+      right: 35px;
+     }
+    // position: absolute;
+    // top: 40px;
+    // right: 35px;
     align-items: center;
     display: flex;
+    @media screen and (max-width:768px){
+      margin-left: auto;
+     }
+
    }
  
 
-   .container--mob__menu.data-modal-open  .header__position{
-     visibility: hidden;
-   }
+   
   
   .logo{
       display: inline-flex;
