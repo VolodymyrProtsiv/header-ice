@@ -578,7 +578,7 @@ body {
     margin-left: 15px;
   }
   .btn__buy:hover .icon-arrow {
-    color: darkgreen;
+    fill: darkgreen;
   }
   .mob__nav--item {
     border-bottom: 1px solid #E18298;
